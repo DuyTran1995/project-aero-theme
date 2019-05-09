@@ -1,0 +1,218 @@
+.footer{
+    height: 100%;
+    &-bgim{
+        background-image: url('../../dist/asset/bkg_footer.jpg');
+        height: 100%;
+        background-repeat: no-repeat;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        padding-top: 5em;
+        &-container{
+            &_content-flex{
+                .footer-contact{
+                    text-align: left;
+                    a{
+                        text-decoration: none;
+                        display: block;
+                        font-size: 2em;
+                        font-family: 'Rubik', sans-serif;
+                        span{
+                            margin-left: -10px;
+                        }
+                    }
+                    .content-footercontact{
+                        color: #5a6069;
+                        font-size: 13px;
+                        width: 100%;
+                        line-height: 24px;
+                        font-weight: 400;
+                    }
+                    .address{
+                        color: #fff;
+                        line-height: 23px;
+                        letter-spacing: 0.25px;
+                        font-size: 13px;
+                        &:before{
+                            content: "\f3c5";
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            color: #ff0000;
+                            margin-right: 10px;
+                        }
+                    }
+                    .phone{
+                        color: #fff;
+                        line-height: 23px;
+                        letter-spacing: 0.25px;
+                        font-size: 13px;
+                        &:before{
+                            content: "\f3cd";
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            color: #ff0000;
+                            margin-right: 10px;
+                        }
+                    }
+                    .email{
+                        color: #fff;
+                        line-height: 23px;
+                        letter-spacing: 0.25px;
+                        font-size: 13px;
+                        &:before{
+                            content: "\f0e0";
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            color: #ff0000;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+                .footer-menu-flex{
+                    justify-content: space-around;
+                    .footer-menu{
+                        border-left: 1px solid #383838;
+                        .title-menu{
+                            text-transform: uppercase;
+                            margin-left: 1em;
+                            font-weight: 500;
+                            font-family: 'Oswald', sans-serif;
+                        }
+                        li{
+                            list-style: none;
+                            a{
+                                text-decoration: none;
+                                text-transform: uppercase;
+                                margin-left: 1em;
+                                color: #5a6069;
+                                display: block;
+                                font-weight: 400;
+                                padding: 1em 0;
+                                font-size: 13px;
+                                &:hover{
+                                    color: #ff0000;
+                                    transform: translateX(10px);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &_footerbottom-flex{
+                border-top: 1px solid #383838;
+                margin-top: 3em;
+                padding-top: 3em;
+                &_license{
+                    p{
+                        color: #5a6069;
+                        font-size: 0.8em;
+                    }
+                }
+                &_social{
+                    margin-top: 0.5em;
+                    display: flex;
+                    justify-content: center;
+                    .fab{
+                        color: #838896;
+                        padding: 0 0.5em;
+                        &:hover{
+                            color: #ff0000;
+                        }
+                    }
+                }
+                // &_payment{
+                //     a{
+                //         display: block;
+                //         height: 100%;
+                //         img{
+                //             width: 100%;
+                //             height: auto;
+                //         }
+                //     }
+
+                // }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 992px){
+    .footer{
+        height: 60%;
+        &-bgim{
+
+            &-container{
+                &_content-flex{
+                    .footer-contact{
+
+                        a{
+
+                            span{
+
+                            }
+                        }
+                        .content-footercontact{
+
+                        }
+                        .address{
+
+                            &:before{
+
+                            }
+                        }
+                        .phone{
+
+                            &:before{
+
+                            }
+                        }
+                        .email{
+
+                            &:before{
+
+                            }
+                        }
+                    }
+                    .footer-menu-flex{
+
+                        .footer-menu{
+
+                            .title-menu{
+
+                            }
+                            li{
+
+                                a{
+
+                                    &:hover{
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &_footerbottom-flex{
+
+                    &_license{
+                        p{
+
+                        }
+                    }
+                    &_social{
+
+                        .fab{
+
+                            &:hover{
+
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

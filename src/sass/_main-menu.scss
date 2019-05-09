@@ -1,0 +1,160 @@
+nav{
+    ul{
+        position: relative;
+        padding: 0;
+        margin: 0;
+    }
+    .main-menu{
+        display: flex;
+        justify-content: center;
+        background-color: #22232b;
+        border-bottom: 6px solid #FF0000;
+        position: relative;
+        transition: none;
+        z-index: 1;
+        &:before{
+            position: absolute;
+            content: '';
+            border-style: solid;
+            border-width: 5px 5px 0 5px;
+            border-color: #ffffff transparent;
+            top: 50%;
+            margin-left: -7em;
+        }
+        &:after{
+            position: absolute;
+            content: '';
+            border-style: solid;
+            border-width: 5px 5px 0 5px;
+            border-color: #ffffff transparent;
+            top: 50%;
+            margin-left: -3em;
+        }
+        li{
+            list-style: none;
+        }
+        >li{
+            list-style: none;
+            transform: skewX(-15deg);
+            transition: all 1s linear;
+            &:nth-child(1){
+                background-color: #ff0000;
+            }
+            a{
+                text-decoration: none;
+                text-transform: uppercase;
+                display: block;
+                font-family: 'Oswald', sans-serif;
+                color: #383838;
+            }
+            >a{
+                padding: 2em 1em;
+                color: #ffffff;
+                &:hover{
+                    background-color: #ff0000;
+                }
+            }
+            [class*='sub-menu']{
+                position: absolute;
+            }
+            .sub-menu-1{
+                padding-left: 0;
+                background-color: #ffffff;
+                left: 20%;
+                margin-top: 0.1em;
+                border-radius: 5px;
+                padding-top: 2em;
+                padding-bottom: 2em;
+                visibility: hidden;
+                transform: skewX(15deg);
+                >li{
+                    list-style-type: none;
+                    width: 200px;
+                    text-align: center;
+                    >a{                    
+                        padding: 1em;
+                        &:hover{
+                            color: #ff0000;
+                        }
+                    }
+                }
+            }
+            .sub-menu-2{
+                background-color: #ffffff;
+                border-radius: 5px;
+                padding-top: 2em;
+                padding-bottom: 2em;
+                transform: skewX(15deg);
+                width: 200px;
+                display: flex;
+                visibility: hidden;
+                flex-direction: column;
+                justify-content: space-around;
+                [class*='menu-']{
+                    border-right: 1px solid #ebebeb;
+                    padding-right: 4em;
+                    height: 100%;
+                    .title{
+                        a{
+                            font-size: 1em;
+                            display: block;
+                        }
+                    }
+                    >li{
+                        a{
+                            display: none;
+                            padding: 1em;
+                            font-size: 0.8em;
+                            text-align: center;
+                            &:hover{
+                                color: #ff0000;
+                            }
+                        }
+                    }
+                }             
+                
+            }
+
+        }
+        li:nth-child(1):hover .sub-menu-1{
+            visibility: visible;
+        }
+        li:nth-child(2):hover .sub-menu-2{
+            visibility: visible;
+        }
+            
+    }
+    .shrink{
+        position: fixed;
+        background-color: rgba(0,0,0,.5);
+        height: 60px;
+        padding-top: 0;
+    }
+}
+@media screen and (min-width: 992px){
+nav{
+    .main-menu{
+        li{
+            .sub-menu-2{
+                flex-direction: row;
+                width: 800px;     
+                [class*='menu-']{
+                    .title{
+                        font-weight: bold;
+                        margin: 1em 0;
+                        a{
+                            font-size: 1em;
+                            display: block;
+                        }
+                    }
+                    >li{
+                        a{
+                            display: inline-block;
+                        }
+                    }
+                    }             
+                }
+            }
+        }
+    }       
+}

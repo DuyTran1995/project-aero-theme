@@ -1,0 +1,57 @@
+
+nav
+    ul.main-menu
+        li
+            a(href="#") home
+            ul.sub-menu-1
+                li
+                    a(href="#") home 1
+                li
+                    a(href="#") home 2
+                li
+                    a(href="#") home 3
+                li
+                    a(href="#") home 4
+                li
+                    a(href="#") home 5
+        li
+            a(href="#") shop
+            ul.sub-menu-2
+                .menu-1
+                    li.title
+                        a(href="#") wheels
+                    - const itemsOne = ["home","shop","layout","blog","pages"];
+                    - for (let i = 0; i<itemsOne.length; i++){
+                        li
+                            a(href="#")= itemsOne[i]   
+                    -          }
+                .menu-2
+                    li.title
+                        a(href="#") decoration
+                    - const itemsTwo = ["home","shop","layout","blog","pages"];
+                    - for (let i = 0; i<itemsTwo.length; i++){
+                        li
+                            a(href="#")= itemsTwo[i]   
+                    -        }
+                .menu-3
+                    li.title
+                        a(href="#") accessories
+                    - const itemsThree = ["home","shop","layout","blog","pages"];
+                    - for (let i = 0; i<itemsThree.length; i++){
+                        li
+                            a(href="#")= itemsThree[i]   
+                    -        }
+                .menu-4
+                    li.title
+                        a(href="#") engine
+                    - const itemsFour = ["home","shop","layout","blog","pages"];
+                    - for (let i = 0; i<itemsFour.length; i++){
+                        li
+                            a(href="#")= itemsFour[i]   
+                    -        }
+        li
+            a(href="#") layout
+        li
+            a(href="#") blog
+        li
+            a(href="#") pages

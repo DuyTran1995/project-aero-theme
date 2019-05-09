@@ -1,0 +1,7 @@
+mixin featuredproducts(rate="rateproduct",name="nameproduct",des="product-des",prince="product-prince")
+    p.ranking= rate
+    a.name= name
+    p.product-des= des 
+    p.product-prince.red= prince
+    if block
+        block

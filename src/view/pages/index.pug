@@ -1,0 +1,392 @@
+extends ../layouts/layout.pug
+include ../mixin/card-sale.pug
+include ../mixin/card-featured-products.pug
+include ../mixin/card-bottom.pug
+include ../mixin/card-services.pug
+
+block title
+    title Project 3
+
+//- Header
+block header
+    button.scrolltop
+    header
+        .banner
+            .title-content
+                p.title-banner LAMBORGHINI AVENTADOR
+                p.content-banner FIND YOUR DREAM CAR
+                .button-banner
+                    .circle-button
+            <i class="fas fa-chevron-left"></i>
+            <i class="fas fa-chevron-right"></i>
+        .title.row
+            input#toggle-transform(type="checkbox", name="menu")
+            label(for="toggle-transform").toggle-transform
+                p.transform USD
+                    <i class="fas fa-angle-down"></i>
+            nav.menu-transform.col-12.col-sm-6.col-md-6.col-lg-4.col-xl-4
+                ul
+                    li
+                        a(href="#") usd
+                    li
+                        a(href="#") eru
+                    li
+                        a(href="#") gbp
+                    li
+                        a(href="#") pkr
+                    li
+                        a(href="#") cad
+                    li
+                        a(href="#") jpy
+                
+            p.name-title.col-12.col-sm-6.col-md-6.col-lg-4.col-xl-4 Aero
+                span.dot.bgcl-red
+            .toggle-menu.col-12.col-sm-6.col-md-6.col-lg-4.col-xl-4
+                nav
+                    input#control-menu(type="checkbox", name="menu")
+                    label(for="control-menu").toggle-menu
+                    ul.my-accout
+                        p My Accout
+                        li
+                            a.tan(href="#") sign in
+                        li 
+                            a.tan(href="#") register 
+                        li
+                            a.tan(href="#") wish list
+                        li
+                            a.tan(href="#") cart
+                input#toggle-shopping(type="checkbox", name="menu")
+                label(for="toggle-shopping").toggle-shopping
+                    <i class="fas fa-shopping-cart"></i>
+                p.content-shopping Your shopping cart is empty!
+//- End Header
+
+//- Main
+block main-content
+    main.content-bgcl14151b.toggle
+        .content-bgcl14151b-container.container
+            //- History Content
+            .content-bgcl14151b-container_history
+                h1.white.blur history
+                h3.white welcome to 
+                    strong.white aero car store 
+                
+                .content-bgcl14151b-container_history-flex.row
+                        img.content-bgcl14151b-container_history-flex_img.col-12.col-sm-12.col-md-6(src="../asset/img1.png", alt="")
+                        .content-bgcl14151b-container_history-flex_info.col-12.col-sm-12.col-md-6
+                            span.md MEET OUR
+                            span.red.lg CAR CLUB SINCE 1892
+                            span.sm CUSTOME AND CLUB
+                            p Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima.
+                            p Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
+                            h4.subscribe-name.white JOHN DOE - CEO AERO
+                            img.subscribe-sign(src="../asset/img2.png", alt="")
+            //- Card Sale
+            .content-bgcl14151b-container_sale
+                .content-bgcl14151b-container_sale-flex.row 
+                    .content-bgcl14151b-container_sale-flex_card 
+                        img(src="../asset/img1-top-aero1.jpg", alt="")
+                        +card-sale("NEW COLLECTION","NEW TRANDING 2017-2018","SALE UP TO 20% OFF")
+                    .content-bgcl14151b-container_sale-flex_card 
+                        img(src="../asset/img2-top-aero1.jpg", alt="")
+                        +card-sale("BEST LOW PRICE","HIGH PERFORMANCE","SALE UP TO 10% OFF")
+                    .content-bgcl14151b-container_sale-flex_card 
+                        img(src="../asset/img3-top-aero1.jpg", alt="")
+                        +card-sale("HONDA MOTOBYCYCLES","RED SALE ENDS APRIL 30","SALE UP TO 40% OFF")
+            //- Out Products
+            .content-bgcl14151b-container_featuredproducts
+                .content-bgcl14151b-container_featuredproducts-flex.row
+                    .content-bgcl14151b-container_featuredproducts-flex_title
+                        <i class="fas fa-star"></i>
+                        p.white featured products
+                        <i class="fas fa-star"></i>  
+                
+                .content-bgcl14151b-container_featuredproducts_content-flex.row
+                    p.dynamicu.tan Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.
+                .content-bgcl14151b-container_featuredproducts_products
+                    .content-bgcl14151b-container_featuredproducts_products-flex.row
+                        .content-bgcl14151b-container_featuredproducts_products-flex_card
+                            img.img_featuredproducts(src="../asset/1-600x600_600x600.jpg", alt="")
+                            img.img-hover(src="../asset/2-600x600_600x600.jpg", alt="")
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-signal far"></i>
+                            <i class="fas fa-eye far"></i>
+                            +featuredproducts("NO REVIEW","AOPO DESIGNS WOOLRICH KLETTERSACK","Born to be worn. Clip on the worlds most wearable music player and take up to 240 songs with you anywhere. Choose from five colors including four new hues to...","$150.00")
+                            a.btn_featuredproducts_card(href="#") ADD TO CART
+                        .content-bgcl14151b-container_featuredproducts_products-flex_card
+                            img.img_featuredproducts(src="../asset/2-600x600_600x600.jpg", alt="")
+                            img.img-hover(src="../asset/4-600x600_ceb87a56-6b62-4a7c-a226-3ca7edddbc07_600x600.jpg", alt="")
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-signal"></i>
+                            <i class="fas fa-eye far"></i>
+                            +featuredproducts("NO REVIEW","BOPO DESIGNS WOOLRICH KLETTERSACK","Born to be worn. Clip on the worlds most wearable music player and take up to 240 songs with you anywhere. Choose from five colors including four new hues to...","$100.00")
+                            a.btn_featuredproducts_card(href="#") ADD TO CART
+                        .content-bgcl14151b-container_featuredproducts_products-flex_card
+                            img.img_featuredproducts(src="../asset/5-600x600_6bffe399-97df-4b21-9769-1ce9cd38e92b_600x600.jpg", alt="")
+                            img.img-hover(src="../asset/7-600x600_56fa81c7-04c4-4294-b4b1-626b96689bbe_600x600.jpg", alt="")
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-signal far"></i>
+                            <i class="fas fa-eye far"></i>
+                            +featuredproducts("NO REVIEW","COPO DESIGNS WOOLRICH KLETTERSACK","Born to be worn. Clip on the worlds most wearable music player and take up to 240 songs with you anywhere. Choose from five colors including four new hues to...","$150.00")
+                            a.btn_featuredproducts_card(href="#") ADD TO CART                           
+//- End Main
+
+//- Testimonial
+block testimonial
+    .testimonial.toggle
+        .testimonial-bgim 
+            .testimonial-bgim_img
+                img(src="../asset/testimor1-64x64_64x64.png", alt="")
+            .testimonial-bgim_content-flex.row
+                <i class="fas fa-quote-left"></i>
+                a(href="#") Mauris blandit, metus a venenatis lacinia, felis enim tincidunt est, condimentum vulputate orci augue eu metus. Fusce dictum, nisi et semper ultricies, felis tortor blandit odio, egestas consequat pur..
+                <i class="fas fa-quote-right"></i>
+            .testimonial-bgim_name.row
+                p Nathanael Jaworski
+            .testimonial-bgim_directional.row
+                span
+                <i class="fab fa-gg"></i>
+                span
+                <i class="fab fa-gg"></i>
+                span
+//- End Testimonial
+
+//- Sub-Content
+block sub-content
+    .ourproduct.toggle
+        .ourproduct-bgcl14151b
+            .ourproduct-bgcl14151b-container.container 
+                .ourproduct-bgcl14151b-container_title-flex.row
+                    <i class="fas fa-star"></i>
+                    p OUR PRODUCTS
+                    <i class="fas fa-star"></i>
+                .ourproduct-bgcl14151b-container_content-flex.row
+                    p Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.
+                .ourproduct-bgcl14151b-container_menu-flex.row
+                    ul.ourproduct-menu.row
+                        li
+                            a(href="#") wheel
+                        li
+                            a(href="#") sounds 
+                        li   
+                            a(href="#") featured
+                        li
+                            a(href="#") home page
+                .ourproduct-bgcl14151b-container-flex.row
+                    .ourproduct-bgcl14151b-container-flex_card 
+                        img.img_featuredproducts(src="../asset/1-600x600_600x600.jpg", alt="")
+                        img.img-hover(src="../asset/2-600x600_600x600.jpg", alt="")
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-signal far"></i>
+                        <i class="fas fa-eye far"></i>
+                        +featuredproducts("NO REVIEW","AOPO DESIGNS WOOLRICH KLETTERSACK","Born to be worn. Clip on the worlds most wearable music player and take up to 240 songs with you anywhere. Choose from five colors including four new hues to...","$150.00")
+                        a.btn_featuredproducts_card(href="#") ADD TO CART
+                    .ourproduct-bgcl14151b-container-flex_card 
+                        img.img_featuredproducts(src="../asset/2-600x600_600x600.jpg", alt="")
+                        img.img-hover(src="../asset/4-600x600_ceb87a56-6b62-4a7c-a226-3ca7edddbc07_600x600.jpg", alt="")
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-signal"></i>
+                        <i class="fas fa-eye far"></i>
+                        +featuredproducts("NO REVIEW","BOPO DESIGNS WOOLRICH KLETTERSACK","Born to be worn. Clip on the worlds most wearable music player and take up to 240 songs with you anywhere. Choose from five colors including four new hues to...","$100.00")
+                        a.btn_featuredproducts_card(href="#") ADD TO CART
+                    .ourproduct-bgcl14151b-container-flex_card 
+                        img.img_featuredproducts(src="../asset/5-600x600_6bffe399-97df-4b21-9769-1ce9cd38e92b_600x600.jpg", alt="")
+                        img.img-hover(src="../asset/7-600x600_56fa81c7-04c4-4294-b4b1-626b96689bbe_600x600.jpg", alt="")
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-signal far"></i>
+                        <i class="fas fa-eye far"></i>
+                        +featuredproducts("NO REVIEW","COPO DESIGNS WOOLRICH KLETTERSACK","Born to be worn. Clip on the worlds most wearable music player and take up to 240 songs with you anywhere. Choose from five colors including four new hues to...","$150.00")
+                        a.btn_featuredproducts_card(href="#") ADD TO CART       
+                    .ourproduct-bgcl14151b-container-flex_card 
+                        img.img_featuredproducts(src="../asset/5-600x600_6bffe399-97df-4b21-9769-1ce9cd38e92b_600x600.jpg", alt="")
+                        img.img-hover(src="../asset/7-600x600_56fa81c7-04c4-4294-b4b1-626b96689bbe_600x600.jpg", alt="")
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-signal far"></i>
+                        <i class="fas fa-eye far"></i>
+                        +featuredproducts("NO REVIEW","COPO DESIGNS WOOLRICH KLETTERSACK","Born to be worn. Clip on the worlds most wearable music player and take up to 240 songs with you anywhere. Choose from five colors including four new hues to...","$150.00")
+                        a.btn_featuredproducts_card(href="#") ADD TO CART      
+
+//- End Sub-Content
+
+
+//- Bottom Aero
+block bottom-aero
+    .bottomaero.toggle
+        .bottomaero-flex.row
+            .bottomaero-flex_img.col-12.col-sm-12.col-md-12.col-lg-6
+                img(src="../asset/img1-bottom-aero1.jpg", alt="")
+                .bottomaero-flex_img_content-flex.row
+                    +card-aerobottom("new arivals","Good help & Guard","Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros")
+                    a.btn.btn-bottomaero(href="#") VIEW COLLECTION
+                        <i class="fas fa-angle-right"></i>
+            .bottomaero-flex_img.col-12.col-sm-12.col-md-12.col-lg-6
+                img(src="../asset/img2-bottom-aero1.jpg", alt="")
+                .bottomaero-flex_img_content-flex.row
+                    +card-aerobottom("new arivals","Good help & Guard","Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros")
+                    a.btn.btn-bottomaero(href="#") VIEW COLLECTION
+                        <i class="fas fa-angle-right"></i>
+//- End Bottom Aero
+
+//- Services
+block services
+    .services.toggle
+        .services-bgcl14151b
+            .services-bgcl14151b-container.container 
+                .services-bgcl14151b-container-flex.row 
+                    .services-bgcl14151b-container-flex_card
+                        +card-services("FREE DELIVERY","Nam liber tempor cum soluta nobis eleifend option congue.")
+                        <i class="fa fa-rocket"></i>
+                    .services-bgcl14151b-container-flex_card
+                        +card-services("MONEY GUARANTEE","Nam liber tempor cum soluta nobis eleifend option congue.")
+                        <i class="fa fa-money-bill-alt"></i>
+                    .services-bgcl14151b-container-flex_card
+                        +card-services("ONLINE SUPPORT","Nam liber tempor cum soluta nobis eleifend option congue.")
+                        <i class="fa fa-headphones"></i>
+//- End Services    
+
+
+//- Blog
+block blog
+    .blog-bgcl14151b.toggle
+        .blog-bgcl14151b-container.container
+            .blog-bgcl14151b-container_title-flex.row
+                <i class="fas fa-star white"></i>
+                h3.white LATEST BLOG POST
+                <i class="fas fa-star white"></i>
+            .blog-bgcl14151b-container_content-flex.row
+                p.white Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.
+            .blog-bgcl14151b-container-flex.row
+                .blog-bgcl14151b-container-flex_card-flex.row.col-xl-6
+                    .blog-card-img.col-xl-6
+                        img(src="../asset/post1-270x334_270x334.jpg", alt="")
+                    .blog-card-content.col-xl-6
+                        span.red.lg 24
+                        span.red.sm /FEB
+                        a(href="#") Claritas est etiam processus dynamicus.
+                        p.postedby Posted By:
+                            span.red  aero-theme Admin
+                        p.white.posted-content  Lorem ipsum dolor sit amet. Integer adipiscing erat llentesque s sollicitudin pellentesque et non erat....
+                        a(href="#").btn.btn-readmode READ MODE
+                .blog-bgcl14151b-container-flex_card-flex.row.col-xl-6
+                    .blog-card-img.col-xl-6
+                        img(src="../asset/post2-270x334_270x334.jpg", alt="")
+                    .blog-card-content.col-xl-6
+                        span.red.lg 24
+                        span.red.sm /FEB
+                        a(href="#") Claritas est etiam processus dynamicus.
+                        p.postedby Posted By:
+                            span.red  aero-theme Admin
+                        p.white.posted-content  Lorem ipsum dolor sit amet. Integer adipiscing erat llentesque s sollicitudin pellentesque et non erat....
+                        a(href="#").btn.btn-readmode READ MODE
+//- End Blog
+
+
+//- Brand
+block brand
+    .brand-bgcl14151b.toggle
+        .brand-bgcl14151b-container.container
+            .brand-bgcl14151b-container_title-flex.row 
+                <i class="fas fa-star white"></i>
+                h3.white LOGO BRANDS & CLIENTS
+                <i class="fas fa-star white"></i>
+            .brand-bgcl14151b-container_logobrandclient-flex.row
+                a(href="#")  
+                    img(src="../asset/br-01_210x100.png", alt="")
+                a(href="#") 
+                    img(src="../asset/br-02_210x100.png", alt="")
+                a(href="#") 
+                    img(src="../asset/br-03_210x100.png", alt="")
+                a(href="#") 
+                    img(src="../asset/br-04_210x100.png", alt="")
+//- End Brand
+
+
+//- Subscribers
+block subcribers
+    .subcribers-bgcl14151b.toggle 
+        .subcribers-bgcl14151b-container.container 
+            .subcribers-bgcl14151b-container-flex.row 
+                p.subcribers-heading.red SPECIAL OFERS FOR SUBSCRIBERS
+                h3.subcribers-title.white TEN PERCENT MEMBER DISCOUNT
+                p.subcribers-content Subscribe to our newsletters now and stay up to date with new collections, the latest lookbooks and exclusive offers.
+                .btn.btn-email-subcribers
+                    input(type="text", value="Email Address")
+//- End Subcribers
+
+
+//- Footer
+block footer
+    footer.footer.toggle 
+        .footer-bgim
+            .footer-bgim-container.container 
+                .footer-bgim-container_content-flex.row
+                    .footer-contact.col-12.col-lg-3
+                        a(href="#").white Aero 
+                            span.red .
+                        p.content-footercontact We are a team of designers and developers who creates high quality multipurpose and responsive premium Shopify themes.
+                        p.address Address :
+                            span   No 40 Baria Sreet 133/2, NewYork, USA.
+                        p.phone Phone :
+                            span   +(012) 800 456 789
+                        p.email Email :
+                            span   Infor@aero.com
+                    .footer-menu-flex.col-8.row
+
+                        -const menuleft = ["home","shop","layout","blog","pages"]
+                        nav 
+                            ul.footer-menu
+                                .title-menu 
+                                    p.white main menu
+                                -for (let i=0 ; i<menuleft.length ; i++ ){
+                                li 
+                                    a(href="#")= menuleft[i]
+                                    -}
+                        -const menuleftcenter = ["home","shop","layout","blog","pages"]
+                        nav 
+                            ul.footer-menu
+                                .title-menu
+                                    p.white main menu
+                                -for (let i=0 ; i<menuleftcenter.length ; i++ ){
+                                li 
+                                    a(href="#")= menuleftcenter[i]
+                                    -}
+                        -const menurightcenter = ["home","shop","layout","blog","pages"]
+                        nav 
+                            ul.footer-menu
+                                .title-menu
+                                    p.white main menu
+                                -for (let i=0 ; i<menurightcenter.length ; i++ ){
+                                li 
+                                    a(href="#")= menurightcenter[i]
+                                    -}
+                        -const menuright = ["home","shop","layout","blog","pages"]
+                        nav 
+                            ul.footer-menu
+                                .title-menu
+                                    p.white main menu
+                                -for (let i=0 ; i<menuright.length ; i++ ){
+                                li 
+                                    a(href="#")= menuright[i]
+                                    -}
+                .footer-bgim-container_footerbottom-flex.row
+                    .footer-bgim-container_footerbottom-flex_license.col-12.col-sm-6
+                        p Copyright © 2017 MassTechnologist.Com. All Rights Reserved.
+                    .footer-bgim-container_footerbottom-flex_social.col-12.col-sm-6
+                        .facebook
+                            a(href="#")
+                                <i class="fab fa-facebook-f"></i>
+                        .twittter
+                            a(href="#")
+                                <i class="fab fa-twitter"></i>
+                        .pinterest
+                            a(href="#")
+                                <i class="fab fa-pinterest-p"></i>
+                        .google
+                            a(href="#")
+                                <i class="fab fa-google-plus-g"></i>
+                        .instagram
+                            a(href="#")
+                                <i class="fab fa-instagram"></i>
+
+                                    
+//- End Footer

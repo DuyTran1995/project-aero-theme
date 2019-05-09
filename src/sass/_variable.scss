@@ -1,0 +1,40 @@
+$red: #FF0000;
+$tan: #383838;
+$yellow: #e8cc1c;
+$grey: #EFEFEF;
+$white: #EFEFEF;
+$menu: #22232b;
+
+$color: () !default;
+$color: map-merge((
+    "red": $red,
+    "tan": $tan,
+    "yellow": $yellow,
+    "grey": $grey,
+    "white": $white,
+    "menu": $menu,
+) , $color );
+
+@each $color-name, $color in $color{
+    .#{$color-name}{
+        color: $color;
+    }
+}
+
+$color: () !default;
+$color: map-merge((
+    "red": $red,
+    "tan": $tan,
+    "yellow": $yellow,
+    "grey": $grey,
+    "white": $white,
+    "menu": $menu,
+) , $color );
+
+@each $bgcl-name, $color in $color{
+    .bgcl-#{$bgcl-name}{
+        background-color: $color;
+    }
+}
+
+

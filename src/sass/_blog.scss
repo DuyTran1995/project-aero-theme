@@ -1,0 +1,164 @@
+.blog-bgcl14151b{
+    background-color: #14151b;
+    height: 60%;
+    &-container{
+        &_title-flex{
+            text-align: center;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            border: 1px solid #fff;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            p{
+                color: #ffffff;
+            }
+            i{
+                color: #ffffff;
+                margin: 0 .5em;
+            }
+        }
+        &_content-flex{
+            justify-content: center;
+            p{
+                color: #4a4f57;
+                font-size: 0.8em;
+            }
+        }
+        &-flex{
+            &_card-flex{
+                .blog-card-img{
+                    margin-left: 0em;
+                    padding: 1em;
+                    img{
+                        display: none;
+                        width: 100%;
+                        border-radius: 10px;
+                        &:hover{
+                            opacity: 0.8;
+                        }
+                    }
+                }
+                .blog-card-content{
+                    padding: .5em;
+                    margin-top: 10px;
+                    .lg{
+                        font-size: 2em;
+                        font-family: 'Oswald', sans-serif
+                    }
+                    .sm{
+                        font-size: 0.8em;
+                        font-family: 'Oswald', sans-serif
+                    }
+                    a{
+                        display: block;
+                        text-decoration: none;
+                        color: #363c45;
+                        font-size: 14px;
+                        font-family: 'Oswald', sans-serif;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                    }
+                    .postedby{
+                        text-transform: capitalize;
+                        display: block;
+                        margin-bottom: 19px;
+                        letter-spacing: 0.25px;
+                        color: #363c45;
+                        border-bottom: 1px solid #fff;
+                        padding-bottom: 19px;
+                        border-color: #363c45;
+                        font-family: 'Oswald', sans-serif;
+                        font-size: 13px;
+                        &:before{
+                            font-family: "Font Awesome 5 Free";
+                            content: "\f044";
+                            font-size: 13px;
+                        }
+                    }
+                    .posted-content{
+                        color: #363c45;
+                    }
+                    .btn{
+                        width: 200px;
+                        height: 50px;
+                        background-color: #21252c;
+                        line-height: 50px;
+                        color: #fce7e7;
+                        text-align: center;
+                        border-radius: 30px;
+                        transition: all .3s linear;
+                        &:hover{
+                            background-color: #ff0000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 992px){
+    .blog-bgcl14151b{
+
+        &-container{
+            &_title-flex{
+                width: 550px;
+                font-size: 2em;
+                p{
+
+                }
+                i{
+
+                }
+            }
+            &_content-flex{
+                justify-content: center;
+                p{
+
+                }
+            }
+            &-flex{
+                &_card-flex{
+                    .blog-card-img{
+
+                        img{
+                            display: block;
+                            &:hover{
+
+                            }
+                        }
+                    }
+                    .blog-card-content{
+
+                        .lg{
+
+                        }
+                        .sm{
+
+                        }
+                        a{
+
+                        }
+                        .postedby{
+
+                            &:before{
+
+                            }
+                        }
+                        .posted-content{
+
+                        }
+                        .btn{
+
+                            &:hover{
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

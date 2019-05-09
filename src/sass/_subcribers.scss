@@ -1,0 +1,139 @@
+.subcribers-bgcl14151b{
+    background-color: #14151b;
+    border-bottom: 3px solid #ff0000;
+    padding-bottom: 5em;
+    &-container{
+        &-flex{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .subcribers-heading{
+                font-size: 12px;
+                font-weight: 400;
+                text-transform: uppercase;
+                margin: 0 0 5px 0;
+            }
+            .subcribers-title{
+                font-size: 20px;
+                font-weight: 500;
+                margin-bottom: 15px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                margin-top: 0;
+                color: #fff;
+                font-family: 'Oswald', sans-serif;
+            }
+            .subcribers-content{
+                display: block;
+                margin: 0;
+                font-family: 'Rubik', sans-serif;
+                font-weight: 400;
+                color: #5a6069;
+                font-size: 0.8em;
+                margin-bottom: 2em;
+            }
+            .btn-email-subcribers{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                &:after{
+                    position: absolute;
+                    left: 50%;
+                    top: 120%;
+                    width: 40px;
+                    height: 40px;
+                    background-color: #ff0000;
+                    color: #ffffff;
+                    line-height: 40px;
+                    text-align: center;
+                    border-radius: 50%;
+                    font-family: "Font Awesome 5 Free";
+                    content: "\f054";
+                    font-weight: 900;
+                    cursor: pointer;
+                }
+                [type*=text]{
+                    display: inline-block;
+                    background: #0f0f15;
+                    padding: 10px 70px 10px 25px;
+                    border: 0;
+                    border-bottom: 1px solid #1c1d25;
+                    line-height: 16px;
+                    height: 56px;
+                    border-radius: 30px;
+                    color: #5a6069;
+                    font-size: 12px;
+                    width: 300px;
+                    font-weight: 400;
+                    position: relative;
+
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 576px){
+    .subcribers-bgcl14151b{
+
+        &-container{
+            &-flex{
+
+                .subcribers-heading{
+
+                }
+                .subcribers-title{
+
+                }
+                .subcribers-content{
+
+                }
+                .btn-email-subcribers{
+
+                    &:after{
+                        left: 85%;
+                        top: 13%;
+                    }
+                    [type*=text]{
+                        width: 400px;
+    
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px){
+    .subcribers-bgcl14151b{
+
+        &-container{
+            &-flex{
+
+                .subcribers-heading{
+
+                }
+                .subcribers-title{
+
+                }
+                .subcribers-content{
+
+                }
+                .btn-email-subcribers{
+
+                    &:after{
+                        left: 90%;
+                        top: 13%;
+                    }
+                    [type*=text]{
+                        width: 630px;
+    
+                    }
+                }
+            }
+        }
+    }
+}
+        

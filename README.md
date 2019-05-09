@@ -1,0 +1,1 @@
+This is my porject, i used proprecessor pug - scss - bem and compile to html/css and javascripts pure don't use framwork bootstrap 4 and jquery

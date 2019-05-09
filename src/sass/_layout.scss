@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&subset=vietnamese');
+*{
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    margin: 0;
+    font-family: "Rubik", "HelveticaNeue", "Helvetica Neue", sans-serif;
+    font-weight: 400;
+}
+.toggle{
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all .8s;
+}
+.visible{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.container{
+    max-width: auto;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+[class*='col']{
+    // border: 1px solid yellow;
+    flex: 1;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    // margin-left: -15px;
+    // margin-right: -15px;
+}
+
+@for $i from 1 through 12{
+    $grid:100%/12*$i;
+    .col-#{$i}{
+        width: $grid;
+        flex-basis: $grid;
+    }
+}
+@each $rps in(
+    sm 576px 540px,
+    md 768px 720px,
+    lg 992px 960px,
+    xl 1200px 1140px
+){
+    @media screen and (min-width: #{nth($rps,2)}){
+        .container{
+            max-width: #{nth($rps,3)};
+        }
+            @for $i from 1 through 12{
+                $grid:100%/12*$i;
+                .col-#{nth($rps,1)}-#{$i}{
+                    width: $grid;
+                    flex-basis: $grid;
+            }
+        }
+    }
+}

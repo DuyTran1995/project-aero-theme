@@ -1,0 +1,207 @@
+.bottomaero{
+    
+    width: 100%;
+    &-flex{
+        &_img{
+            width: 100%;
+            img{
+                width: 100%;
+                position: relative;
+            }
+            &_content-flex{
+                position: absolute;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                top: 30%;
+                font-family: 'Oswald', sans-serif;
+                transform: scale(.2) translateX(50px);
+                opacity: 0;
+                transition: all .5s linear;
+                .bottomaero-heading{
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    color: #fff;
+                    display: block;
+                    font-weight: 500;
+                }
+                .bottomaero-title{
+                    font-size: 30px;
+                    text-transform: uppercase;
+                    color: #fff;
+                    display: block;
+                    font-weight: 500;
+                    letter-spacing: 5px;
+                    margin-top: 3px;
+                }
+                .bottomaero-content{
+                    width: 65%;
+                    text-align: center;
+                    font-size: 14px;
+                    color: #fff;
+                    display: block;
+                    line-height: 24px;
+                    font-family: 'Rubik', sans-serif;
+                    margin-top: 20px;
+                }
+                .btn{
+                    color: #383838;
+                    text-decoration: none;
+                    width: 200px;
+                    height: 60px;
+                    background-color: #ffffff;
+                    line-height: 60px;
+                    border-radius: 30px;
+                    padding: 0 1em;
+                    position: relative;
+                    transition: all .5s ease-out;
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        width: 50px;
+                        height: 50px;
+                        background-color: #383838;
+                        top: 5px;
+                        left: 70%;
+                        border-radius: 50%;
+                        transition: all .5s ease-out;
+                    }
+                }
+                .fas{
+                    color: #fff;
+                    position: absolute;
+                    top: 38%;
+                    left: 80%;
+                    right: 0;
+                    bottom :0;
+                    margin: auto;
+                    transition: all .5s ease-out;
+                }
+                .btn:hover{
+                    background-color: #ff0000;
+                }
+                .btn:hover:before{
+                    background-color: #fff;
+                }
+                .btn:hover .fas{
+                    color: #383838;
+                }
+                
+            }
+            &:hover .bottomaero-flex_img_content-flex{
+                transform: scale(1) translateX( 0px);
+                opacity: 1;
+            }
+        }
+        &_img{
+            position: relative;
+            img{
+            }
+                &_content-flex{
+
+                }
+        }
+                
+    }
+}
+
+
+
+@media screen and (min-width: 576px){
+    .bottomaero{
+       
+        &-flex{
+            &_img{
+                img{
+                    
+                    
+                }
+                &_content-flex{
+                    top: 5%;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    margin: auto;
+                    .bottomaero-heading{
+
+                    }
+                    .bottomaero-title{
+
+                    }
+                    .bottomaero-content{
+
+                    }
+                    .btn{
+
+                        &:before{
+
+                        }
+                    }
+                    .fas{
+
+                    }
+                    .btn:hover{
+
+                    }
+                    .btn:hover:before{
+
+                    }
+                    .btn:hover .fas{
+
+                    }
+                }
+            }      
+        }
+    }           
+}
+
+@media screen and (min-width: 992px){
+    .bottomaero{
+       
+        &-flex{
+            &_img{
+                img{
+                    
+                    
+                }
+                &_content-flex{
+                    top: 0%;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    margin: auto;
+                    .bottomaero-heading{
+                        margin-top: 0;
+                    }
+                    .bottomaero-title{
+
+                    }
+                    .bottomaero-content{
+
+                    }
+                    .btn{
+
+                        &:before{
+
+                        }
+                    }
+                    .fas{
+
+                    }
+                    .btn:hover{
+
+                    }
+                    .btn:hover:before{
+
+                    }
+                    .btn:hover .fas{
+
+                    }
+                }
+            }      
+        }
+    }           
+}
+
+            
+        
