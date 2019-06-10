@@ -1,0 +1,26 @@
+{
+  "name": "project-aero-theme",
+  "version": "1.0.0",
+  "description": "This is my porject, i used proprecessor pug - scss - bem and compile to html/css and javascripts pure don't use framwork bootstrap 4 and jquery",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DuyTran1995/project-aero-theme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DuyTran1995/project-aero-theme/issues"
+  },
+  "homepage": "https://github.com/DuyTran1995/project-aero-theme#readme"
+}

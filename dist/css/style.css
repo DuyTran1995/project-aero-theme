@@ -33,48 +33,48 @@ body, html {
   flex-wrap: wrap; }
 
 .col-1 {
-  width: 8.3333333333%;
-  flex-basis: 8.3333333333%; }
+  width: 8.33333%;
+  flex-basis: 8.33333%; }
 
 .col-2 {
-  width: 16.6666666667%;
-  flex-basis: 16.6666666667%; }
+  width: 16.66667%;
+  flex-basis: 16.66667%; }
 
 .col-3 {
   width: 25%;
   flex-basis: 25%; }
 
 .col-4 {
-  width: 33.3333333333%;
-  flex-basis: 33.3333333333%; }
+  width: 33.33333%;
+  flex-basis: 33.33333%; }
 
 .col-5 {
-  width: 41.6666666667%;
-  flex-basis: 41.6666666667%; }
+  width: 41.66667%;
+  flex-basis: 41.66667%; }
 
 .col-6 {
   width: 50%;
   flex-basis: 50%; }
 
 .col-7 {
-  width: 58.3333333333%;
-  flex-basis: 58.3333333333%; }
+  width: 58.33333%;
+  flex-basis: 58.33333%; }
 
 .col-8 {
-  width: 66.6666666667%;
-  flex-basis: 66.6666666667%; }
+  width: 66.66667%;
+  flex-basis: 66.66667%; }
 
 .col-9 {
   width: 75%;
   flex-basis: 75%; }
 
 .col-10 {
-  width: 83.3333333333%;
-  flex-basis: 83.3333333333%; }
+  width: 83.33333%;
+  flex-basis: 83.33333%; }
 
 .col-11 {
-  width: 91.6666666667%;
-  flex-basis: 91.6666666667%; }
+  width: 91.66667%;
+  flex-basis: 91.66667%; }
 
 .col-12 {
   width: 100%;
@@ -83,207 +83,163 @@ body, html {
 @media screen and (min-width: 576px) {
   .container {
     max-width: 540px; }
-
   .col-sm-1 {
-    width: 8.3333333333%;
-    flex-basis: 8.3333333333%; }
-
+    width: 8.33333%;
+    flex-basis: 8.33333%; }
   .col-sm-2 {
-    width: 16.6666666667%;
-    flex-basis: 16.6666666667%; }
-
+    width: 16.66667%;
+    flex-basis: 16.66667%; }
   .col-sm-3 {
     width: 25%;
     flex-basis: 25%; }
-
   .col-sm-4 {
-    width: 33.3333333333%;
-    flex-basis: 33.3333333333%; }
-
+    width: 33.33333%;
+    flex-basis: 33.33333%; }
   .col-sm-5 {
-    width: 41.6666666667%;
-    flex-basis: 41.6666666667%; }
-
+    width: 41.66667%;
+    flex-basis: 41.66667%; }
   .col-sm-6 {
     width: 50%;
     flex-basis: 50%; }
-
   .col-sm-7 {
-    width: 58.3333333333%;
-    flex-basis: 58.3333333333%; }
-
+    width: 58.33333%;
+    flex-basis: 58.33333%; }
   .col-sm-8 {
-    width: 66.6666666667%;
-    flex-basis: 66.6666666667%; }
-
+    width: 66.66667%;
+    flex-basis: 66.66667%; }
   .col-sm-9 {
     width: 75%;
     flex-basis: 75%; }
-
   .col-sm-10 {
-    width: 83.3333333333%;
-    flex-basis: 83.3333333333%; }
-
+    width: 83.33333%;
+    flex-basis: 83.33333%; }
   .col-sm-11 {
-    width: 91.6666666667%;
-    flex-basis: 91.6666666667%; }
-
+    width: 91.66667%;
+    flex-basis: 91.66667%; }
   .col-sm-12 {
     width: 100%;
     flex-basis: 100%; } }
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 720px; }
-
   .col-md-1 {
-    width: 8.3333333333%;
-    flex-basis: 8.3333333333%; }
-
+    width: 8.33333%;
+    flex-basis: 8.33333%; }
   .col-md-2 {
-    width: 16.6666666667%;
-    flex-basis: 16.6666666667%; }
-
+    width: 16.66667%;
+    flex-basis: 16.66667%; }
   .col-md-3 {
     width: 25%;
     flex-basis: 25%; }
-
   .col-md-4 {
-    width: 33.3333333333%;
-    flex-basis: 33.3333333333%; }
-
+    width: 33.33333%;
+    flex-basis: 33.33333%; }
   .col-md-5 {
-    width: 41.6666666667%;
-    flex-basis: 41.6666666667%; }
-
+    width: 41.66667%;
+    flex-basis: 41.66667%; }
   .col-md-6 {
     width: 50%;
     flex-basis: 50%; }
-
   .col-md-7 {
-    width: 58.3333333333%;
-    flex-basis: 58.3333333333%; }
-
+    width: 58.33333%;
+    flex-basis: 58.33333%; }
   .col-md-8 {
-    width: 66.6666666667%;
-    flex-basis: 66.6666666667%; }
-
+    width: 66.66667%;
+    flex-basis: 66.66667%; }
   .col-md-9 {
     width: 75%;
     flex-basis: 75%; }
-
   .col-md-10 {
-    width: 83.3333333333%;
-    flex-basis: 83.3333333333%; }
-
+    width: 83.33333%;
+    flex-basis: 83.33333%; }
   .col-md-11 {
-    width: 91.6666666667%;
-    flex-basis: 91.6666666667%; }
-
+    width: 91.66667%;
+    flex-basis: 91.66667%; }
   .col-md-12 {
     width: 100%;
     flex-basis: 100%; } }
+
 @media screen and (min-width: 992px) {
   .container {
     max-width: 960px; }
-
   .col-lg-1 {
-    width: 8.3333333333%;
-    flex-basis: 8.3333333333%; }
-
+    width: 8.33333%;
+    flex-basis: 8.33333%; }
   .col-lg-2 {
-    width: 16.6666666667%;
-    flex-basis: 16.6666666667%; }
-
+    width: 16.66667%;
+    flex-basis: 16.66667%; }
   .col-lg-3 {
     width: 25%;
     flex-basis: 25%; }
-
   .col-lg-4 {
-    width: 33.3333333333%;
-    flex-basis: 33.3333333333%; }
-
+    width: 33.33333%;
+    flex-basis: 33.33333%; }
   .col-lg-5 {
-    width: 41.6666666667%;
-    flex-basis: 41.6666666667%; }
-
+    width: 41.66667%;
+    flex-basis: 41.66667%; }
   .col-lg-6 {
     width: 50%;
     flex-basis: 50%; }
-
   .col-lg-7 {
-    width: 58.3333333333%;
-    flex-basis: 58.3333333333%; }
-
+    width: 58.33333%;
+    flex-basis: 58.33333%; }
   .col-lg-8 {
-    width: 66.6666666667%;
-    flex-basis: 66.6666666667%; }
-
+    width: 66.66667%;
+    flex-basis: 66.66667%; }
   .col-lg-9 {
     width: 75%;
     flex-basis: 75%; }
-
   .col-lg-10 {
-    width: 83.3333333333%;
-    flex-basis: 83.3333333333%; }
-
+    width: 83.33333%;
+    flex-basis: 83.33333%; }
   .col-lg-11 {
-    width: 91.6666666667%;
-    flex-basis: 91.6666666667%; }
-
+    width: 91.66667%;
+    flex-basis: 91.66667%; }
   .col-lg-12 {
     width: 100%;
     flex-basis: 100%; } }
+
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1140px; }
-
   .col-xl-1 {
-    width: 8.3333333333%;
-    flex-basis: 8.3333333333%; }
-
+    width: 8.33333%;
+    flex-basis: 8.33333%; }
   .col-xl-2 {
-    width: 16.6666666667%;
-    flex-basis: 16.6666666667%; }
-
+    width: 16.66667%;
+    flex-basis: 16.66667%; }
   .col-xl-3 {
     width: 25%;
     flex-basis: 25%; }
-
   .col-xl-4 {
-    width: 33.3333333333%;
-    flex-basis: 33.3333333333%; }
-
+    width: 33.33333%;
+    flex-basis: 33.33333%; }
   .col-xl-5 {
-    width: 41.6666666667%;
-    flex-basis: 41.6666666667%; }
-
+    width: 41.66667%;
+    flex-basis: 41.66667%; }
   .col-xl-6 {
     width: 50%;
     flex-basis: 50%; }
-
   .col-xl-7 {
-    width: 58.3333333333%;
-    flex-basis: 58.3333333333%; }
-
+    width: 58.33333%;
+    flex-basis: 58.33333%; }
   .col-xl-8 {
-    width: 66.6666666667%;
-    flex-basis: 66.6666666667%; }
-
+    width: 66.66667%;
+    flex-basis: 66.66667%; }
   .col-xl-9 {
     width: 75%;
     flex-basis: 75%; }
-
   .col-xl-10 {
-    width: 83.3333333333%;
-    flex-basis: 83.3333333333%; }
-
+    width: 83.33333%;
+    flex-basis: 83.33333%; }
   .col-xl-11 {
-    width: 91.6666666667%;
-    flex-basis: 91.6666666667%; }
-
+    width: 91.66667%;
+    flex-basis: 91.66667%; }
   .col-xl-12 {
     width: 100%;
     flex-basis: 100%; } }
+
 .red {
   color: #FF0000; }
 
@@ -623,23 +579,24 @@ header {
   .toggle-menu nav {
     display: block;
     right: 100%; } }
+
 @media screen and (min-width: 768px) {
   .toggle-menu nav {
     display: block;
     right: 70%; }
-
   header .banner .fa-chevron-left {
     right: 80%; }
   header .banner .fa-chevron-right {
     left: 80%; } }
+
 @media screen and (min-width: 992px) {
   header .banner .fa-chevron-left {
     right: 90%; }
   header .banner .fa-chevron-right {
     left: 90%; }
-
   .toggle-menu nav {
     right: 40%; } }
+
 @keyframes title {
   from {
     opacity: 0;
@@ -647,10 +604,12 @@ header {
   to {
     transform: rotate(0deg);
     opacity: 1; } }
+
 nav ul {
   position: relative;
   padding: 0;
   margin: 0; }
+
 nav .main-menu {
   display: flex;
   justify-content: center;
@@ -743,6 +702,7 @@ nav .main-menu {
     visibility: visible; }
   nav .main-menu li:nth-child(2):hover .sub-menu-2 {
     visibility: visible; }
+
 nav .shrink {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.5);
@@ -761,6 +721,7 @@ nav .shrink {
         display: block; }
     nav .main-menu li .sub-menu-2 [class*='menu-'] > li a {
       display: inline-block; } }
+
 .content-bgcl14151b {
   padding-top: 25em;
   padding-bottom: 5em;
@@ -925,13 +886,13 @@ nav .shrink {
           transition: all .5s ease-in-out; }
         .content-bgcl14151b-container_featuredproducts_products-flex_card .fa-heart {
           top: 2%;
-          transition-delay: 0.2s; }
+          transition-delay: .2s; }
         .content-bgcl14151b-container_featuredproducts_products-flex_card .fa-signal {
           top: 5%;
-          transition-delay: 0.4s; }
+          transition-delay: .4s; }
         .content-bgcl14151b-container_featuredproducts_products-flex_card .fa-eye {
           top: 8%;
-          transition-delay: 0.6s; }
+          transition-delay: .6s; }
         .content-bgcl14151b-container_featuredproducts_products-flex_card .ranking {
           display: block;
           font-size: 0.6em;
@@ -988,6 +949,7 @@ nav .shrink {
       margin-left: 2em; }
       .content-bgcl14151b-container_sale-flex_card img {
         width: 70%; } }
+
 @media screen and (min-width: 768px) {
   .content-bgcl14151b {
     height: 520%; }
@@ -998,6 +960,7 @@ nav .shrink {
       margin-left: 2em; }
       .content-bgcl14151b-container_sale-flex_card img {
         width: 70%; } }
+
 @media screen and (min-width: 992px) {
   .content-bgcl14151b {
     height: 100%; }
@@ -1013,6 +976,7 @@ nav .shrink {
       width: 30%; }
       .content-bgcl14151b-container_featuredproducts_products-flex_card .btn_featuredproducts_card {
         margin-top: 3em; } }
+
 .testimonial {
   height: 60%; }
   .testimonial-bgim {
@@ -1163,13 +1127,13 @@ nav .shrink {
           transition: all .5s ease-in-out; }
         .ourproduct-bgcl14151b-container-flex_card .fa-heart {
           top: 2%;
-          transition-delay: 0.2s; }
+          transition-delay: .2s; }
         .ourproduct-bgcl14151b-container-flex_card .fa-signal {
           top: 5%;
-          transition-delay: 0.4s; }
+          transition-delay: .4s; }
         .ourproduct-bgcl14151b-container-flex_card .fa-eye {
           top: 8%;
-          transition-delay: 0.6s; }
+          transition-delay: .6s; }
         .ourproduct-bgcl14151b-container-flex_card .ranking {
           display: block;
           font-size: 0.6em;
@@ -1224,6 +1188,7 @@ nav .shrink {
     .ourproduct-bgcl14151b-container-flex_card {
       width: 50%;
       height: 680px; } }
+
 @media screen and (min-width: 992px) {
   .ourproduct {
     height: 120%; }
@@ -1236,6 +1201,7 @@ nav .shrink {
       .ourproduct-bgcl14151b-container-flex_card {
         width: 24%;
         height: 650px; } }
+
 .bottomaero {
   width: 100%; }
   .bottomaero-flex_img {
@@ -1325,6 +1291,7 @@ nav .shrink {
     bottom: 0;
     left: 0;
     margin: auto; } }
+
 @media screen and (min-width: 992px) {
   .bottomaero-flex_img_content-flex {
     top: 0%;
@@ -1334,6 +1301,7 @@ nav .shrink {
     margin: auto; }
     .bottomaero-flex_img_content-flex .bottomaero-heading {
       margin-top: 0; } }
+
 .services {
   margin-top: -5px; }
   .services-bgcl14151b {
@@ -1377,6 +1345,7 @@ nav .shrink {
 @media screen and (min-width: 992px) {
   .services-bgcl14151b-container-flex_card {
     width: 30%; } }
+
 .blog-bgcl14151b {
   background-color: #14151b;
   height: 60%; }
@@ -1412,10 +1381,10 @@ nav .shrink {
     margin-top: 10px; }
     .blog-bgcl14151b-container-flex_card-flex .blog-card-content .lg {
       font-size: 2em;
-      font-family: "Oswald", sans-serif; }
+      font-family: 'Oswald', sans-serif; }
     .blog-bgcl14151b-container-flex_card-flex .blog-card-content .sm {
       font-size: 0.8em;
-      font-family: "Oswald", sans-serif; }
+      font-family: 'Oswald', sans-serif; }
     .blog-bgcl14151b-container-flex_card-flex .blog-card-content a {
       display: block;
       text-decoration: none;
@@ -1461,6 +1430,7 @@ nav .shrink {
     justify-content: center; }
   .blog-bgcl14151b-container-flex_card-flex .blog-card-img img {
     display: block; } }
+
 .brand-bgcl14151b {
   background-color: #14151b;
   height: 50%; }
@@ -1490,6 +1460,7 @@ nav .shrink {
     font-size: 2em;
     width: 650px;
     margin-left: 20%; } }
+
 .subcribers-bgcl14151b {
   background-color: #14151b;
   border-bottom: 3px solid #ff0000;
@@ -1561,12 +1532,14 @@ nav .shrink {
     top: 13%; }
   .subcribers-bgcl14151b-container-flex .btn-email-subcribers [type*=text] {
     width: 400px; } }
+
 @media screen and (min-width: 992px) {
   .subcribers-bgcl14151b-container-flex .btn-email-subcribers:after {
     left: 90%;
     top: 13%; }
   .subcribers-bgcl14151b-container-flex .btn-email-subcribers [type*=text] {
     width: 630px; } }
+
 .footer {
   height: 100%; }
   .footer-bgim {
@@ -1669,5 +1642,3 @@ nav .shrink {
 @media screen and (min-width: 992px) {
   .footer {
     height: 60%; } }
-
-/*# sourceMappingURL=style.css.map */
